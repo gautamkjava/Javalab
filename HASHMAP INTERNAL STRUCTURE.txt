@@ -1,0 +1,3 @@
+http://www.geeksforgeeks.org/internal-working-of-hashmap-java/
+http://netjs.blogspot.in/2015/05/how-hashmap-internally-works-in-java.html
+https://www.youtube.com/watch?v=yY4eYwzHJ3I

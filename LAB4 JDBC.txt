@@ -1,0 +1,22 @@
+package com.jlcindia.jdbc1;
+import java.sql.*;
+import com.jlcindia.jdbc.util.JDBCUtil;
+public class Lab4 {
+public static void main(String[] args) {
+Connection con=null; Statement st=null;
+try{
+con=JDBCUtil.getMySQLConnection();
+String qry= "insert into jlcstudents values(77,'Nivas','nivas@jlc.com',31903290)";
+st=con.createStatement();
+int x=st.executeUpdate(qry);
+if(x==1)
+System.out.println("Record Inserted");
+else
+System.out.println("Record Not Inserted");
+}catch(Exception e){
+e.printStackTrace();
+}finally{
+JDBCUtil.cleanup1(st, con);
+}
+}
+}
