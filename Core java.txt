@@ -1,0 +1,99 @@
+1)What is the Contract between equals() and hashCode()?
+
+#Both the method equals() and hashCode() are the methods of Object class, hence available in all the classes.
+
+#Syntax for equals() method in Object class is public boolean equals(Object obj)
+
+#Syntax for hashCode() method in Object class is public int hashCode()
+The equals() method of Object class checks if the two references compared point to same object, 
+returns true if they are same and false if two objects are different. We can override this functionality by our own custom way of comparing objects.
+
+#If the equals() method returns true, then the hashcode() of the two object must be same.
+
+#If hashCode() of two objects are same, it does not mean that the objects should be same.
+
+###What is the advantage of Hibernate over jdbc?###
+
+- The advantages of Hibernate over JDBC are:
+
+1. Hibernate code will work well for all databases, for ex: Oracle,MySQL, etc. 
+where as JDBC is database specific.
+
+2. No knowledge of SQL is needed because Hibernate is a set of objects and 
+a table is treated as an object, where as to work with JDBC, one need to know SQL.
+
+3. Query tuning is not required in Hibernate. The query tuning is automatic in hibernate by using
+ criteria queries, and the result of performance is at its best. Where as in JDBC the query 
+tuning is to be done by the database authors.
+
+4. With the support of cache of hibernate, the data can be placed in the cache for better 
+performance. Where as in JDBC the java cache is to be implemented.
+
+
+13 Java Interview Questions On Abstract Class :
+
+1) Abstract class must have only abstract methods. True or false?
+
+False. Abstract methods can also have concrete methods.
+
+2) Is it compulsory for a class which is declared as abstract to have at least one abstract method?
+
+Not necessarily. Abstract class may or may not have abstract methods.
+
+3) Can we use “abstract” keyword with constructor, Instance Initialization Block and Static Initialization Block?
+
+No. Constructor, Static Initialization Block, Instance Initialization Block and variables can not be abstract.
+
+4) Why final and abstract can not be used at a time?
+
+Because, final and abstract are totally opposite in nature. A final class or method can not be modified further where as abstract class or method must be modified further. “final” keyword is used to denote that a class or method does not need further improvements. “abstract” keyword is used to denote that a class or method needs further improvements.
+
+5) Can we instantiate a class which does not have even a single abstract methods but declared as abstract?
+
+No, We can’t instantiate a class once it is declared as abstract even though it does not have abstract methods.
+
+6) Can we declare abstract methods as private? Justify your answer?
+
+No. Abstract methods can not be private. If abstract methods are allowed to be private, then they will not be inherited to sub class and will not get enhanced.
+
+7) We can’t instantiate an abstract class. Then why constructors are allowed in abstract class?
+
+It is because, we can’t create objects to abstract classes but we can create objects to their sub classes. From sub class constructor, there will be an implicit call to super class constructor. That’s why abstract classes should have constructors. Even if you don’t write constructor for your abstract class, compiler will keep default constructor.
+
+8) Can we declare abstract methods as static?
+
+No, abstract methods can not be static.
+
+9) Can a class contain an abstract class as a member?
+
+Yes, a class can have abstract class as it’s member.
+
+10) Abstract classes can be nested. True or false?
+
+True. Abstract classes can be nested i.e an abstract class can have another abstract class as it’s member.
+
+11) Can we declare abstract methods as synchronized?
+
+No, abstract methods can not be declared as synchronized. But methods which override abstract methods can be declared as synchronized.
+
+12) Can we declare local inner class as abstract?
+
+Yes. Local inner class can be abstract.
+
+13) Can abstract method declaration include throws clause?
+
+Yes. Abstract methods can be declared with throws clause.
+/////////////////////////////////////////////////////////////////
+/                                                              //
+/Jboss->supprots EJB Container whereas Tomcat Doesn't support.//
+/       JNDI Name                                             //
+/    Multiple Connection Pooling concept.                      //
+/We can connect Multiple Application Connection pooling.     //
+/                                                           //
+/Reverse Engineering                                       //
+/Tomcat-JAR                                               //
+/JboSS/Weblogic-EAR/WAR                                  //
+/                                                       // 
+/Jeera->  Task assigned                                //
+/SVN-> Project assigned                               //
+//////////////////////////////////////////////////   //
